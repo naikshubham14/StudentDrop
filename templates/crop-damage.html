@@ -1,0 +1,160 @@
+{% extends 'layout.html' %} {% block body %}
+
+<style>
+
+    html body {
+      background-color: rgb(206, 206, 228);
+
+      
+  }
+
+  
+</style>
+<!--Form Section-->
+<br /><br />
+<h2 style="text-align: center; margin: 0px; color: black">
+  <b>Student Details</b>
+</h2>
+<br />
+
+<div
+  style="
+    width: 350px;
+    height: 50rem;
+    margin: 0px auto;
+    color: black;
+    border-radius: 25px;
+    padding: 10px 10px;
+  "
+>
+  <form method="POST" action="{{ url_for('dam_pred') }}">
+    <div class="form-group">
+      <label for="Residence_city" style="font-size: 17px"><b>Residence city</b></label>
+      <input
+        type="text"
+        class="form-control"
+        id="Residence_city"
+        name="Residence_city"
+        placeholder="Enter the value"
+        style="font-weight: bold"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="Socioeconomic_level" style="font-size: 17px"
+        ><b>Socioeconomic level</b></label
+      >
+      <input
+        type="text"
+        class="form-control"
+        id="Socioeconomic_level"
+        name="Socioeconomic_level"
+        placeholder="Enter the value"
+        style="font-weight: bold"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="Age" style="font-size: 17px"><b>Age</b></label>
+      <input
+        type="text"
+        class="form-control"
+        id="Age"
+        name="Age"
+        placeholder="Enter the value"
+        style="font-weight: bold"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="Province" style="font-size: 17px"><b>District</b></label>
+      <input
+        type="text"
+        class="form-control"
+        id="Province"
+        name="Province"
+        placeholder="Enter the value"
+        style="font-weight: bold"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="Family_income" style="font-size: 17px"><b>Family Income</b></label>
+      <input
+        type="text"
+        class="form-control"
+        id="Family_income"
+        name="Family_income"
+        placeholder="Enter the value"
+        style="font-weight: bold"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="Father_level" style="font-size: 17px"><b>Father's Educational Background</b></label>
+      <input
+        type="text"
+        class="form-control"
+        id="Father_level"
+        name="Father_level"
+        placeholder="Enter the value"
+        style="font-weight: bold"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="Mother_level" style="font-size: 17px"><b>Mother's Educational Background</b></label>
+      <input
+        type="text"
+        class="form-control"
+        id="Mother_level"
+        name="Mother_level"
+        placeholder="Enter the value"
+        style="font-weight: bold"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="STEM_subjects" style="font-size: 17px"><b>Mandatory Subject Mark(%)</b></label>
+      <input
+        type="text"
+        class="form-control"
+        id="STEM_subjects"
+        name="STEM_subjects"
+        placeholder="Enter the value"
+        style="font-weight: bold"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="H_subjects" style="font-size: 17px"><b>Optional Subject Mark(%)</b></label>
+      <input
+        type="text"
+        class="form-control"
+        id="H_subjects"
+        name="H_subjects"
+        placeholder="Enter the value"
+        style="font-weight: bold"
+        required
+      />
+    </div>
+
+
+    <div class="d-flex justify-content-center">
+      <button
+        type="submit"
+        class="btn btn-info"
+        style="color: black; font-weight: bold; width: 130px; height:50px; border-radius:12px; font-size: 21px;"
+      >
+        Predict
+      </button>
+    </div>
+  </form>
+</div>
+
+
+
+<!-- Form section -->
+
+{% endblock %}
