@@ -10,7 +10,7 @@ import pickle
 # Loading crop recommendation model
 
 
-crop_damge_model = pickle.load(open("../models/RandomForest.pkl", 'rb'))
+crop_damge_model = pickle.load(open('models/RandomForest.pkl', 'rb'))
 
 # =========================================================================================
 
